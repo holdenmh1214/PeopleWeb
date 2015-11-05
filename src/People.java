@@ -89,6 +89,7 @@ public class People {
             fr.read(fileContent);
             return new String(fileContent);
         } catch (Exception e) {
+            System.out.println(e);
             return null;
         }
 
@@ -146,6 +147,7 @@ public class People {
                         int idNum = Integer.valueOf(id);
                         m.put("person", selectPerson(conn, idNum));
                     } catch (Exception e) {
+                        System.out.println(e);
 
                     }
                     return new ModelAndView(m, "person.html");

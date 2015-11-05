@@ -4,7 +4,9 @@
 <a href="/person?id={{id}}">{{firstName}} {{lastName}}</a><br>
 {{/people}}
 <br>
-{{#previousTrue}}<a href="/?offset={{previous}}"><-Previous </a>{{/previousTrue}}<br>
-{{#nextTrue}}<a href="/?offset={{next}}"> Next-></a>{{/nextTrue}}
+<b>{{#previousTrue}}<a href="/?offset={{previous}}"><-Previous </a>{{/previousTrue}}<br>
+    {{#nextTrue}}<a href="/?offset={{next}}"> Next-></a>{{/nextTrue}}
+</b>
+
 </body>
 </html>
